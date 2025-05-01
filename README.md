@@ -56,12 +56,11 @@ west flash
 ---
 ### **Serial Output (via UART)**
 
-## Serial Output (via UART)
-
-Use `picocom` or `screen`:
+Use `picocom`:
 
 ```
 sudo picocom /dev/ttyACM0 -b 115200
+
 ```
 ---
 
