@@ -24,7 +24,7 @@ This project demonstrates how to interface the **HC-SR04 ultrasonic distance sen
 | **ECHO**    | **PA10**         | Echo GPIO    |
 
 > Pin PA9 and PA10 are **D8** and **D2** on Nucleo-F401RE headers respectively.
-
+![alt text](image-2.png)
 ---
 
 ## Project Structure
