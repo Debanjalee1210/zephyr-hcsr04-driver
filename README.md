@@ -67,8 +67,6 @@ sudo picocom /dev/ttyACM0 -b 115200
 ### **Sample Output**
 
 ```
-## Sample Output
-
 *** Booting Zephyr OS build ***
 Starting HC-SR04 demo
 Distance: 5.27 cm
