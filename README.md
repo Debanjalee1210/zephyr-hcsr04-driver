@@ -52,6 +52,8 @@ west build -b nucleo_f401re hcsr04_driver -p
 # Flash to board using OpenOCD or STM32CubeProgrammer
 west flash
 
+![alt text](image.png)
+
 ```
 ---
 ### **Serial Output (via UART)**
