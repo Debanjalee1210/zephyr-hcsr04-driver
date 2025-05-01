@@ -56,17 +56,13 @@ west flash
 ---
 ### **Serial Output (via UART)**
 
-```
 ## Serial Output (via UART)
 
 Use `picocom` or `screen`:
 
 ```
 sudo picocom /dev/ttyACM0 -b 115200
-# OR
-sudo screen /dev/ttyACM0 115200
-
-
+```
 ---
 
 ### **Sample Output**
@@ -74,10 +70,10 @@ sudo screen /dev/ttyACM0 115200
 ```
 ## Sample Output
 
-```
 *** Booting Zephyr OS build ***
 Starting HC-SR04 demo
 Distance: 5.27 cm
 Distance: 6.91 cm
 Distance: 13.22 cm
 ...
+```
