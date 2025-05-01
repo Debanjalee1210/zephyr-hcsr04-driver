@@ -29,23 +29,31 @@ This project demonstrates how to interface the **HC-SR04 ultrasonic distance sen
 
 ## 📁 Project Structure
 
-<pre> hcsr04_driver/ ├── CMakeLists.txt # Zephyr project definition ├── prj.conf # Kernel and driver config ├── src/ │ └── main.c # Core logic for pulse timing ├── boards/ │ └── nucleo_f401re.overlay # Devicetree pin mapping ├── dts/ │ └── bindings/ │ └── custom/ │ └── gpio-node.yaml # Dummy node to bind gpios </pre>
+```text
+hcsr04_driver/
+├── CMakeLists.txt                  # Zephyr project definition
+├── prj.conf                        # Kernel and driver config
+├── src/
+│   └── main.c                      # Core logic for pulse timing
+├── boards/
+│   └── nucleo_f401re.overlay       # Devicetree pin mapping
+├── dts/
+│   └── bindings/
+│       └── custom/
+│           └── gpio-node.yaml     # Dummy node to bind gpios
+```
+---
 
-## 🛠️ Build and Flash
-
-```bash
+## Build and Flash
+```
 # Build the application
 west build -b nucleo_f401re hcsr04_driver -p
 
 # Flash to board using OpenOCD or STM32CubeProgrammer
 west flash
 
-If STM32CubeProgrammer is not detected:
-west flash -r openocd
-
-
 ---
-
+```
 ### ✅ **🖥️ Serial Output (via UART)**
 
 ```markdown
