@@ -1,0 +1,21 @@
+/ {
+    keys: hcsr04_pins {                  /* parent node */
+        compatible = "gpio-keys";
+
+        trig_sw: trig_sw {               /* child #1  */
+            gpios = <&gpioa 9 GPIO_ACTIVE_HIGH>;
+            label = "TRIG";
+        };
+
+        echo_sw: echo_sw {               /* child #2  */
+            gpios = <&gpioa 10 GPIO_ACTIVE_HIGH>;
+            label = "ECHO";
+        };
+    };
+
+    aliases {
+        trig = &trig_sw;                 /* what your C code grabs   */
+        echo = &echo_sw;
+    };
+};
+

@@ -1,0 +1,11 @@
+description: Dummy wrapper node to hold GPIOs
+
+compatible: "custom,gpio-node"
+
+include: base.yaml
+
+properties:
+  gpios:
+    required: true
+    type: phandle-array
+
